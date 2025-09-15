@@ -22,6 +22,9 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          maroon: "hsl(var(--primary-maroon))",
+          "maroon-light": "hsl(var(--primary-maroon-light))",
+          "maroon-dark": "hsl(var(--primary-maroon-dark))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
