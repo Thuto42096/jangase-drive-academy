@@ -1,21 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Car, Clock, Shield, Award } from "lucide-react";
 import heroImage from "@/assets/hero-driving.jpg";
-
 export const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`
+    }} />
       <div className="absolute inset-0 bg-black/40" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-slate-950">
             Jangase <span className="text-primary-maroon-light">Driving</span> Academy
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
@@ -27,9 +24,7 @@ export const HeroSection = () => {
             <Button variant="hero" size="lg" className="text-lg px-8 py-6">
               Start Your Journey
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary">
-              View Our Courses
-            </Button>
+            
           </div>
           
           {/* Stats */}
@@ -68,6 +63,5 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
