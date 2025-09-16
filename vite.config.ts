@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Use root path when using custom domain, otherwise use repo path
-  base: mode === 'production' ? '/' : '/',
+  // Use repo path for GitHub Pages deployment
+  base: mode === 'production' ? '/jangase-drive-academy/' : '/',
   server: {
     host: "::",
     port: 8080,
