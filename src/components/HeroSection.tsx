@@ -21,7 +21,7 @@ export const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-slate-950">
-            Jangase <span className="text-primary-maroon-light">Driving</span> Academy
+            <span className="text-white" style={{ WebkitTextStroke: '2px #dc2626' } as React.CSSProperties}>Jangase</span> <span className="text-primary-maroon-light">Driving</span> Academy
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
             Learn to drive with confidence. Professional instruction,
