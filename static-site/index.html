@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+    <title>Jangase Driving Academy - Professional Driving Lessons</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .jangase {
+            color: white;
+            -webkit-text-stroke: 2px #dc2626;
+            text-stroke: 2px #dc2626;
+        }
+        
+        .driving {
+            color: #8b5a3c;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #8b5a3c, #a0522d);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .stat {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .primary-text {
+            color: #8b5a3c;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #8b5a3c;
+        }
+        
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #8b5a3c;
+            margin: 1rem 0;
+        }
+        
+        .contact {
+            background: #f8f9fa;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .contact-item h3 {
+            color: #8b5a3c;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1><span class="jangase">Jangase</span> <span class="driving">Driving</span> Academy</h1>
+            <p>Learn to drive with confidence. Professional instruction, modern vehicles, and a commitment to safety.</p>
+            <a href="#services" class="btn">Start Your Journey</a>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">100+</div>
+                    <div>Students Passed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">3</div>
+                    <div>Years Experience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">98%</div>
+                    <div>Pass Rate</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5★</div>
+                    <div>Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our <span class="primary-text">Courses</span></h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">Choose from our comprehensive range of driving courses designed to meet your needs</p>
+        
+        <div class="services">
+            <div class="service-card">
+                <h3>🚦 Learner's License</h3>
+                <div class="price">R1,500</div>
+                <p>Get your learner's license with comprehensive study support</p>
+                <ul style="text-align: left; margin: 1rem 0;">
+                    <li>Study material (road signs, rules of the road)</li>
+                    <li>Learner's license classes/tutorials</li>
+                    <li>Booking assistance at traffic department</li>
+                    <li>Mock tests to prepare for exam</li>
+                </ul>
+                <a href="#contact" class="btn">Book</a>
+            </div>
+            
+            <div class="service-card">
+                <h3>🚗 Code 8 Driving License</h3>
+                <div class="price">R4,000</div>
+                <p>Light Motor Vehicle license with comprehensive training</p>
+                <ul style="text-align: left; margin: 1rem 0;">
+                    <li>Driving lessons in manual/automatic car</li>
+                    <li>Use of driving school vehicle for test</li>
+                    <li>Instructor guidance on parking, hill starts</li>
+                    <li>Pick-up & drop-off for lessons</li>
+                </ul>
+                <a href="#contact" class="btn">Book</a>
+            </div>
+            
+            <div class="service-card">
+                <h3>🚚 Code 10 Driving License</h3>
+                <div class="price">R5,000</div>
+                <p>Heavy Motor Vehicle license for professional drivers</p>
+                <ul style="text-align: left; margin: 1rem 0;">
+                    <li>Driving lessons in a Code 10 truck</li>
+                    <li>Use of vehicle for driver's test</li>
+                    <li>Instructor training on vehicle control</li>
+                    <li>Defensive driving techniques</li>
+                </ul>
+                <a href="#contact" class="btn">Book</a>
+            </div>
+            
+            <div class="service-card">
+                <h3>📜 Professional Driving Permit</h3>
+                <div class="price">R1,000</div>
+                <p>PDP assistance for commercial driving careers</p>
+                <ul style="text-align: left; margin: 1rem 0;">
+                    <li>Assistance with forms and requirements</li>
+                    <li>Medical certificate & police clearance guidance</li>
+                    <li>Document preparation</li>
+                    <li>Admin support until PDP is issued</li>
+                </ul>
+                <a href="#contact" class="btn">Book</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <h2>About <span class="primary-text">Us</span></h2>
+        <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem;">
+            At Jangase Driving Academy, we are dedicated to providing comprehensive and professional 
+            driving education. Located in Daveyton, Benoni, we have been helping aspiring drivers 
+            gain the skills and confidence they need to become safe, responsible drivers.
+        </p>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <h3>Our <span class="primary-text">Instructor</span></h3>
+            <div style="max-width: 400px; margin: 2rem auto; padding: 2rem; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <div style="width: 120px; height: 120px; border-radius: 50%; background: #8b5a3c; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">👨‍🏫</div>
+                <h4 style="color: #8b5a3c; margin-bottom: 0.5rem;">Khaya Goba</h4>
+                <p style="color: #8b5a3c; font-weight: bold; margin-bottom: 1rem;">Chief Driving Instructor</p>
+                <p>With extensive experience in driver education, Khaya is passionate about teaching safe driving practices and helping students build confidence behind the wheel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Get In <span class="primary-text">Touch</span></h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">Ready to start your driving journey? Contact us today for more information or to book your first lesson</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>📍 Our Location</h3>
+                <p>7496 Jumba Street<br>Daveyton 1520<br>Benoni, Gauteng<br>Near DaMore's Tavern</p>
+            </div>
+            
+            <div class="contact-item">
+                <h3>📞 Phone Numbers</h3>
+                <p>+27 (71) 570-9231<br>+27 (61) 792-1377</p>
+            </div>
+            
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p>gobamusawenkosi0801@gmail.com</p>
+            </div>
+            
+            <div class="contact-item">
+                <h3>🕒 Operating Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 8:00 PM<br>Saturday: 9:00 AM - 6:00 PM<br>Sunday: 10:00 AM - 4:00 PM</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="mailto:gobamusawenkosi0801@gmail.com?subject=Driving Lesson Inquiry" class="btn" style="margin: 0.5rem;">Send Email</a>
+            <a href="https://wa.me/27715709231?text=Hi, I would like to inquire about driving lessons at Jangase Driving Academy." class="btn" style="margin: 0.5rem;">WhatsApp</a>
+        </div>
+    </section>
+
+    <footer style="background: #333; color: white; text-align: center; padding: 2rem;">
+        <p>&copy; 2024 Jangase Driving Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
